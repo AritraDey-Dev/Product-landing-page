@@ -12,7 +12,8 @@
     <header class="sticky-header">
         <div class="logo">SmartHome</div>
         <nav>
-            <ul>
+            <ul id="navLinks">
+                <!-- Login or Logout will be dynamically handled by JS -->
                 <li><a href="#home" class="active">Home</a></li>
                 <li><a href="#features">Features</a></li>
                 <li><a href="#pricing">Pricing</a></li>
@@ -21,7 +22,7 @@
         </nav>
     </header>
 
-    
+    <!-- Home Section -->
     <section id="home" class="home-section">
         <div class="home-content">
             <h1>Welcome to SmartHome Security</h1>
@@ -30,7 +31,7 @@
         </div>
     </section>
 
-   
+    <!-- Features Section -->
     <section id="features" class="features-section">
         <h2>Our Features</h2>
         <div class="feature">
@@ -65,7 +66,7 @@
         </div>
     </section>
 
-  
+    <!-- Pricing Section -->
     <section id="pricing" class="pricing-section">
         <h2>Choose Your Plan</h2>
         <div class="pricing-plan">
@@ -125,6 +126,9 @@
         <p>&copy; 2024 SmartHome. All rights reserved.</p>
         <a href="#" class="back-to-top">Back to top</a>
     </footer>
+
+    <!-- Toast Container -->
+    <div id="toastContainer" class="toast-container"></div>
 
     <script src="script.js"></script>
 </body>
